@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <h1>Form Elements</h1>
+    <strong>=====1. Label ========</strong>
+    <br/>
+    <lable for="userName" >User Name: </label>
+
+    <br/>
+    <hr />
+    <strong>=====1. Input ========</strong>
+    <br/>
+    <p>===== Text Input=====</p>
+    <lable for="FirstName" >First Name: </label>
+    <input type="text" placeholder="eg: Kamal" maxlength="5" />
+
+    <p>====== Number Input ======</p>
+    <lable for="age" >Age: </label>
+    <input type="number" name=" " value="18 " />
+
+     <p>====== Password Input ======</p>
+    <lable for="Password" >Password: </label>
+     <input type="password"  />
+
+    <p>====== Date Input ======</p>
+    <lable for="date" >Date: </label>
+    <input type="date"  />
+
+    <p>====== Radio buttons ======</p>
+    <lable for="male" >Male: </label>
+    <input type="radio" name="gender" />
+    <lable for="Female" >Female: </label>
+     <input type="radio" name="gender" />
+
+     <p>====== Check Box ======</p>
+    <lable for="remember" >Remember me: </label>
+    <input type="checkbox" name="remember"  />
+
+    <p>====== File Upload ======</p>
+    <lable for="file" >Remember me: </label>
+    <input type="file" name="file"  />
+    <br/>
+    <strong>=====3. Textarea ========</strong>
+    <br/>
+    <hr/>
+    <textarea 
+        name="massage" 
+        id="message" 
+        placeholder="Enter your massage"
+        rows="4"
+        cols="80"
+    ></textarea>
+
+    <br/>
+    <hr/>
+    <strong>=====4. Button ========</strong>
+    <br/>
+    <button onclick="alert('Hello World!')">Click me </button>
+
+    <br/>
+    <hr/>
+    <strong>=====4. Select  ========</strong>
+    <br/>
+    <select name="Technologies" id="tech">
+        <option value="java">Java</option>
+        <option value="Javascript">Javascript</option>
+        <option value="python">python</option>
+    </select>
+
+    <br/>
+    <hr/>
+    <strong>=====4. fieldset and legend  ========</strong>
+    <br/>
+    <fieldset>
+        <legend>personal information</legend>
+        <lable for="FirstName" >first name : </label>
+        <input type="text"   />
+        <lable for="LastName" >Last name : </label>
+        <input type="text"   />
+    </fieldset>
+
+    <br/>
+    <hr/>
+    <strong>=====4. Form  ========</strong>
+    <br/>
+
+    <form action="/submit-form" method="post">
+        <lable for="first" >first name : </label>
+            <input type="text" name="firstName" id="firstName"  required />
+            <br/>
+        <lable for="lasttName" >last name : </label>
+            <input type="text" name="LastName" id="LastName"  required />
+            <br/>
+            <button type="submit">submit</button>
+    </form>
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
