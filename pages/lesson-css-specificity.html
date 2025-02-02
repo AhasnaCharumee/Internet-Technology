@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-SPECIFICITY</title>
+    <style>
+      p {
+        background-color: blue;
+      }
+      .content {
+        background-color: blueviolet;
+      }
+      #main-content {
+        background-color: brown;
+      }
+      div p {
+        background-color: yellowgreen;
+      }
+      div .content {
+        background-color: yellow;
+      }
+
+      div main-content {
+        background-color: springgreen;
+      }
+      #card #main-content {
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS specificity</h1>
+    <div class="card-container" id="card">
+      <p class="content" id="main-content" style="background-color: aqua">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+        laborum excepturi dolorum quo exercitationem necessitatibus possimus
+        veniam cum alias eius autem cupiditate itaque, minima pariatur tempora
+        facere blanditiis error enim.
+      </p>
+    </div>
+  </body>
+</html>

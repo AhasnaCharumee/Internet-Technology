@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* h2 {
+        color: blueviolet;
+      }
+
+      .heading {
+        color: blue;
+      }
+
+      #header {
+        color: aqua;
+      }
+
+      :target {
+        color: brown;
+      }
+
+      div p {
+        color: coral;
+      }
+
+      div > p {
+        color: crimson;
+      }
+
+      h3 + p {
+        color: blueviolet;
+      }
+
+      h1 ~ p {
+        color: yellowgreen;
+      }
+      /* 
+      li:first-child {
+        color: red;
+      }
+
+      li:last-child {
+        color: darkorange;
+      }
+
+      li:nth-child(3) {
+        color: violet;
+      } */
+
+      li:nth-child(odd) {
+        color: aqua;
+      }
+
+      li:nth-child(even) {
+        color: blue;
+      }
+
+      ul:hover {
+        background-color: yellow;
+      }
+
+      /* p::first-letter {
+        font-size: 20px;
+        color: aqua;
+      } */
+
+      p::first-line {
+        color: blue;
+      }
+
+      p::before {
+        content: "hello";
+        color: brown;
+      }
+
+      p::after {
+        content: "ahas";
+        color: crimson;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <strong>===========1.Element selector=============</strong>
+    <h2>Hello world</h2>
+    <h2>ahsna</h2>
+
+    <strong>===========2. class selector=============</strong>
+
+    <h1 class="heading">Head 1</h1>
+    <h2 class="heading">Head 2</h2>
+    <h3 class="heading">Head 3</h3>
+
+    <strong>===========3.ID selector=============</strong>
+    <p id="header">Lorem, ipsum dolor.</p>
+
+    <strong>===========4.Attribute selector=============</strong>
+    <br />
+    <a href="https://www.youtube.com" target="blank">click here</a>
+    <br />
+    <strong>===========5.Descendant selector=============</strong>
+    <p>Lorem, ipsum dolor.</p>
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+        voluptates.
+      </p>
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+
+    <strong>===========6.Child selector (>)=============</strong>
+    <div>
+      <p>This paragaraph is a direct child of div</p>
+      <section>
+        <p>this paragraph is inside a section.not a direct child of div.</p>
+      </section>
+    </div>
+
+    <strong>===========7.Adjecent sibling selector (+)=============</strong>
+    <h3>adjecent</h3>
+    <p>one</p>
+    <p>two</p>
+
+    <strong>===========8.General sibling selector(~) =============</strong>
+    <h1>Main Heading</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <div>
+      <p>Hello World!!!!</p>
+    </div>
+    <strong>===========9.Pseudo class selector =============</strong>
+    <ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam
+        fugiat quis facilis illum ipsa, ad quae repudiandae soluta animi iure
+        sed, ut officia temporibus reprehenderit pariatur rerum inventore!
+        Incidunt!
+      </p>
+      <li>j</li>
+      <li>jam</li>
+      <li>japan</li>
+      <li>jenu</li>
+    </ul>
+
+    <strong>===========10.Pseudo elements selector =============</strong>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ab,
+      provident voluptas expedita dolorem esse animi amet voluptatum sed saepe
+      porro dicta vel quibusdam nihil sunt cumque officia! Voluptates, eligendi!
+    </p>
+
+    <strong>===========11.Grouping selector (,)=============</strong>
+    <h1>HAS 1</h1>
+    <h2>HAS 2</h2>
+    <h3>HAS 3</h3>
+  </body>
+</html>

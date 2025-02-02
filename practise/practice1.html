@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practise 1</h1>
+    <br/>
+    <!-- //<form action="submit_form.php" method="post"></form> -->
+    <br/>
+    <h2>Input and various type</h2>
+    <br/>
+
+    <input type="text" name="userName" placeholder="Enter your name">
+    <input type="password" name="userName" placeholder="Enter your password">
+    <input type="email" name="email" placeholder="Enter your email">
+    <input type="number" name="num" placeholder="Enter your number">
+    <input type="radio" name="btn" >
+    <input type="checkbox" name="checkbox" >
+    <input type="submit" name="submit" placeholder="submit">
+    <input type="reset" name="reset" placeholder="reset">
+    <input type="date" name="date" placeholder="date">
+
+    <br/>
+    <h2>Textarea</h2>
+    <br/>
+
+    <textarea name="message" rows="4" cols="50" placeholder="Enter your massage"></textarea>
+    <br/>
+    <h2>Select and option</h2>
+    <br/>
+
+    <select name="country" placeholder=country> 
+        <option value="srilanka">sri lanka</option>
+        <option value="india">india</option>
+        <option value="USA">USA</option>
+
+
+    </select>
+
+
+    <fieldset>
+        <legend>Personal</legend>
+        <lable for="first" >first name : </label>
+            <input type="text" name="firstName" id="firstName"  required />
+    </fieldset>
+
+
+
+<br/>
+  <table border="1">
+    <caption>Student Information</caption>
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>20</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>22</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Michael Lee</td>
+<td>21</td>
+            <td>C</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Total Students: 3</td>
+        </tr>
+    </tfoot>
+</table>
+<p>- *`<caption>`*: Table එකේ මාතෘකාව (Student Information).
+    - *`<thead>`*: Table එකේ header (Roll No, Name, Age, Grade).
+    - *`<tbody>`*: Table එකේ ප්‍රධාන දත්ත (සියලුම ශිෂ්‍යයන්ගේ තොරතුරු).
+    - *`<tfoot>`*: Table එකේ footer (Total Students: 3).
+    
+    ---
+    
+    Table Attributes:
+    
+    1. *`border`*:
+    `border` attribute එකක් භාවිතා කරලා table එකේ කටයුතුවලට රේඛාවක් එකතු කළ හැකිය.
+    
+    html
+    <table border="1">
+    
+    
+    2. *`cellspacing`*:
+    `cellspacing` attribute එක table cells අතර දුරය පාලනය කිරීමේදී භාවිතා වේ.
+    
+    html
+    <table cellspacing="5">
+    
+    
+    3. *`cellpadding`*:
+    `cellpadding` attribute එක, table cells තුළ ඇති අන්තර්ගතය හා පේලිය අඩු කිරීමේදී භාවිතා වේ.
+    
+    html
+    <table cellpadding="10">
+    
+    
+    4. *`width` සහ `height`*:
+    table එකේ පරිමාණය විශේෂයෙන් පාලනය කිරීමට *`width`* සහ *`height`* attributes භාවිතා කළ හැකිය.
+    
+    html
+    <table width="500" height="300">
+    ```
+    </p>
+    <br/>
+     <table border="1">
+        <caption>Student Information</caption>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <td rowspan="2">1</td> <!-- Merging this cell across two rows -->
+                <td>John Doe</td>
+                <td>Math</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Science</td>
+                <td>90</td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td colspan="2">No Subject Assigned</td> <!-- Merging two columns -->
+            </tr>
+ <!-- Row 3 -->
+            <tr>
+                <td>3</td>
+                <td>Michael Lee</td>
+                <td>English</td>
+                <td>88</td>
+            </tr>
+        
+        </tbody>
+        </table>
+
+        <p>- Row 1: The first cell in this row (Student ID) uses rowspan="2", which means it spans across two rows. The cell for "John Doe" under Student ID in Row 1 will merge with Row 2 for "John Doe" to show that both Math and Science are being taught to the same student.
+  
+            - Row 2: The Student Name column and Subject column each have a normal cell. However, the Subject column uses colspan="2", which means it merges across two columns (the Subject and Score columns) to indicate that no subject is assigned in this case.
+            
+            - Row 3: In this row, Student ID is shown with a normal entry, and there are no colspan or rowspan attributes in this row.
+            </p>
+
+
+
+
+
+
+</body>
+</html>
