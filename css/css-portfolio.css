@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}  
+/* body {
+    /* background-image: url('/assets/images/—Pngtree—dust\ smoke\ colorful\ background_2379656.jpg');  */
+    /* background-size: cover; Cover full screen */
+    /* background-position: center;  */
+    /* background-repeat: no-repeat; No repeating */
+
+
+
+header {
+    background-color: #ee4ec9;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.profile {
+    margin: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ee4ec9;
+}
+
+.content {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-container, .exercise-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.lesson-card, .exercise-card {
+    background: #ee4ec9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.lesson-card a, .exercise-card a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lesson-card:hover, .exercise-card:hover {
+    background: #ee4ec9;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+.lesson-container, .exercise-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lesson-card, .exercise-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.lesson-card a, .exercise-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
