@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example - Full CSS</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 2px solid rgb(255, 85, 0);
+      }
+
+      .box-1 {
+        background-color: #603f8b;
+      }
+
+      .box-2 {
+        background-color: #b4fee7;
+      }
+
+      .box-3 {
+        background-color: #a16ae8;
+        color: black;
+      }
+
+      .box-4 {
+        background-color: #fd49a0;
+      }
+
+      .container {
+        display: flex;
+        /* height: 95vh; */
+        /* border: 1px solid red; */
+        /* Flex items arranged in a row (default behavior) */
+        /* flex-direction: row-reverse; / / Items arranged in reverse order horizontally */
+        /* flex-direction: column; / / Items arranged vertically in a column */
+        /* flex-direction: column-reverse; / / Items arranged vertically in reverse order */
+
+        /* justify-content: flex-start; / / Align items at the start of the container */
+        /* justify-content: flex-end; / / Align items at the end of the container */
+        /* justify-content: center; / / Center items horizontally */
+        /* justify-content: space-between; / / Distribute items with space between them */
+        /* justify-content: space-around; / / Distribute items with space around them */
+        /* justify-content: space-evenly; / / Distribute items with equal space between and around them */
+
+        /* align-items: stretch; / / Stretch items to fill the container's cross-axis */
+        /* align-items: flex-start; / / Align items to the top (start) of the cross-axis */
+        /* align-items: flex-end; / / Align items to the bottom (end) of the cross-axis */
+        /* align-items: center; / / Center items along the cross-axis (vertically) */
+        /* flex-wrap: nowrap; / / Prevent flex items from wrapping to the next line */
+        /* flex-wrap: wrap; / / Allow flex items to wrap into the next line */
+        /* flex-wrap: wrap-reverse; / / Allow flex items to wrap, but in reverse order */
+
+        /* align-content: flex-start; / / Align rows to the start of the container */
+        /* align-content: flex-end; / / Align rows to the end of the container */
+        /* align-content: space-around; / / Distribute space evenly between rows */
+        /* align-content: space-evenly; / / Distribute space evenly between rows and the start/end of the container */
+
+        /* column-gap: 12px; / / Adds 12px of space between columns (horizontal spacing) */
+        /* row-gap: 20px; / / Adds 20px of space between rows (vertical spacing) */
+
+        gap: 20px; /* Adds 20px of space between flex items */
+        /* height: 95vh; Takes 95% of the viewport height */
+      }
+      .con {
+        display: flex;
+
+        height: 95vh;
+        flex-direction: column;
+        gap: 20px; /* Adds 20px of space between flex items */
+      }
+      .cont {
+        display: flex;
+
+        flex-direction: column-reverse;
+        gap: 20px; /* Adds 20px of space between flex items */
+      }
+      .conta {
+        display: flex;
+
+        flex-direction: row-reverse;
+        gap: 20px; /* Adds 20px of space between flex items */
+      }
+      .contai {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px; /* Adds 20px of space between flex items */
+      }
+      .contain {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        justify-content: flex-end;
+      }
+      .containe {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        justify-content: center;
+      }
+      .flex {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        justify-content: space-between;
+      }
+      .flexe {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        justify-content: space-around;
+      }
+      .flexes {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        justify-content: space-evenly;
+      }
+      .flexesq {
+        display: flex;
+        height: 400px;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-items: stretch;
+        border: 2px solid black;
+      }
+      .flexesql {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-items: flex-start;
+        height: 400px;
+        border: 2px solid black;
+      }
+      .flexesqlb {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-items: flex-end;
+        height: 400px;
+        border: 2px solid black;
+      }
+      .flexesqlbk {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-items: center;
+        height: 400px;
+        border: 2px solid black;
+      }
+      .flexesqlbkv {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        flex-wrap: nowrap;
+        height: 400px;
+        border: 2px solid black;
+      }
+      .flexesqlbkvm {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        flex-wrap: wrap;
+        height: 400px;
+        border: 2px solid black;
+      }
+      .flexesqlbkvmux {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        flex-wrap: wrap-reverse;
+        height: 400px;
+        border: 2px solid black;
+      }
+      .flexesqlbkvmu {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-content: flex-start;
+        height: 400px;
+        border: 2px solid black;
+        flex-wrap: wrap;
+      }
+      .flexesqlbkvmuc {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-content: flex-end;
+        height: 400px;
+        border: 2px solid black;
+        flex-wrap: wrap;
+      }
+      .flexesqlbkvmucn {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-content: space-around;
+        height: 400px;
+        border: 2px solid black;
+        flex-wrap: wrap;
+      }
+      .flexesqlbkvmucnf {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-content: space-evenly;
+        height: 400px;
+        border: 2px solid black;
+        flex-wrap: wrap;
+      }
+      .flexesqlbkvmuy {
+        display: flex;
+        gap: 20px; /* Adds 20px of space between flex items */
+        align-content: center;
+        height: 400px;
+        border: 2px solid black;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Full CSS Example</h1>
+    <h2>Flex Direction:row:</h2>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>flex-direction: column;</h2>
+    <div class="con">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>flex-direction: column reverse;</h2>
+    <div class="cont">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>flex-direction:row reverse;</h2>
+    <div class="conta">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>justify-content: flex-start;</h2>
+    <div class="contai">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>justify-content: flex-end;</h2>
+    <div class="contain">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>justify-content: center;</h2>
+    <div class="containe">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>justify-content: space-between;</h2>
+    <div class="flex">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>
+      justify-content: space-around; / / Distribute items with space around them
+    </h2>
+    <div class="flexe">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>justify-content: space-evenly;</h2>
+    <div class="flexes">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-items: stretch;</h2>
+    <div class="flexesq">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-items: flex-start;</h2>
+    <div class="flexesql">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-items: flex-end;</h2>
+    <div class="flexesqlb">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>justify-content: space-between;</h2>
+    <div class="flexesqlbk">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>flex-wrap: nowrap;</h2>
+    <div class="flexesqlbkv">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>flex-wrap: wrap;</h2>
+    <div class="flexesqlbkvm">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>flex-wrap: wrap-reverse;</h2>
+    <div class="flexesqlbkvmux">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-content: flex-end;</h2>
+    <div class="flexesqlbkvmuc">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-content: flex-start;</h2>
+    <div class="flexesqlbkvmu">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-content: space-around;</h2>
+    <div class="flexesqlbkvmucn">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-content: space-evenly;</h2>
+    <div class="flexesqlbkvmucnf">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+    <h2>align-content: flex-center;</h2>
+    <div class="flexesqlbkvmuy">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+  </body>
+</html>

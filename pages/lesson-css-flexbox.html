@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-css-flexbox</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .box {
+        width: 100px;
+        height: 1px solid black;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 60px;
+        border-color: aqua;
+      }
+      .box-1 {
+        background-color: yellowgreen;
+        align-self: center;
+      }
+      .box-2 {
+        background-color: aqua;
+        align-self: center;
+      }
+      .box-3 {
+        background-color: yellow;
+        align-self: center;
+      }
+      .box-4 {
+        background-color: violet;
+        align-self: center;
+      }
+      .container {
+        display: flex;
+        /* height: 95vh; */
+        /* border: 1px solid red; */
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: flex-start;
+        justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: wrap-reverse; */
+        /* align-content:flex-start ; */
+        /* align-content: flex-end; */
+        /* align-content: space-around; */
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* align-content: space-around; */
+        /* align-content: space-evenly; */
+        /* column-gap: 12px; */
+        /* row-gap: 20px; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>lesson-css-flexbox</h1>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+  </body>
+</html>

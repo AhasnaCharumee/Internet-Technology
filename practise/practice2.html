@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css-practise.css" />
+    <style>
+      .border {
+        width: 200px;
+        height: 100px;
+        border-top: 4px solid red;
+        border-right: 4px dashed blue;
+        border-bottom: 4px dotted green;
+        border-left: 4px solid black;
+        border-radius: 15px;
+      }
+      p {
+        color: green;
+      }
+      .main {
+        color: blue;
+      }
+      #special {
+        color: yellow;
+      }
+      p {
+        color: orange !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS-Border</h1>
+    <div class="border"></div>
+    <h1>css-intergration-Priority</h1>
+    <p id="special" class="main">Hello World!</p>
+    <h1>CSS-INTERGRATION</h1>
+    <h2 style="color: blueviolet; text-align: center">Welcome Guys</h2>
+    <h3>HEY HOW ARE YOU</h3>
+    <p>
+      - Inline CSS: Best for quick, single-use styling.<br />
+      - Internal CSS: Best for styling within one HTML document. - <br />
+      CSS: Ideal for larger projects, allowing style reuse across multiple
+      pages.
+    </p>
+  </body>
+</html>

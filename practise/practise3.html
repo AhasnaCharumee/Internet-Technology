@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css selectors</title>
+    <style>
+      /* * {
+              color: aqua; //universal selector
+            } */
+      /* p {
+        font-size: 50px;
+      } */
+      .button {
+        background-color: red;
+      }
+      #header {
+        background-color: deeppink;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      /* Box with px unit (fixed size) */
+      .box-px {
+        width: 200px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        line-height: 150px; /* Centering text vertically */
+        margin: 10px;
+      }
+
+      /* Box with % unit (relative to parent) */
+      .box-percent {
+        width: 50%; /* 50% of the parent width */
+        height: 150px;
+        background-color: #ff6347;
+        color: white;
+        text-align: center;
+        line-height: 150px;
+        margin: 10px;
+      }
+
+      /* Box with rem unit (relative to root font size) */
+      .box-rem {
+        width: 20rem; /* 20 times the root font size (16px by default) */
+        height: 10rem; /* 10 times the root font size */
+        background-color: #3498db;
+        color: rgb(46, 158, 65);
+        text-align: center;
+        line-height: 10rem;
+        margin: 10px;
+      }
+
+      /* Box with viewport units (relative to the viewport size) */
+      .box-vh {
+        width: 50vw; /* 50% of the viewport width */
+        height: 20vh; /* 20% of the viewport height */
+        background-color: #9b59b6;
+        color: rgb(181, 40, 40);
+        text-align: center;
+        line-height: 20vh;
+        margin: 10px;
+      }
+      /* Container for floated elements */
+      .container {
+        width: 100%;
+        background-color: #f4f4f47e;
+        padding: 20px;
+      }
+
+      /* Floated image on the left */
+      .float-left {
+        float: left;
+        width: 40%;
+        margin-right: 20px;
+      }
+
+      /* Floated image on the right */
+      .float-right {
+        float: right;
+        width: 40%;
+        margin-left: 20px;
+      }
+
+      /* Clear float for the paragraph */
+      .clear-float {
+        clear: both;
+        padding-top: 20px;
+      }
+
+      /* Styling the paragraph */
+      .content {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+    </style>
+    <header>CSS</header>
+  </head>
+  <body>
+    <h1>CSS SELECTORS</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ab,
+      provident voluptas expedita dolorem esse animi amet voluptatum sed saepe
+      porro dicta vel quibusdam nihil sunt cumque officia! Voluptates, eligendi!
+    </p>
+    <button style="background-color: aquamarine">send</button>
+    <h1>CSS UNITS</h1>
+    <div class="box-px">200px width & 150px height (px)</div>
+
+    <div class="box-percent">50% of the parent width (percentage)</div>
+
+    <div class="box-rem">20rem width & 10rem height (rem)</div>
+
+    <div class="box-vh">50vw width & 20vh height (viewport units)</div>
+    <h1>CSS FLAOTING</h1>
+
+    <div class="container">
+      <img
+        src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMjctdGQtMDAyMV80LmpwZw.jpg"
+        alt="Roses"
+        class="float-left"
+      />
+      <img
+        src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMjctdGQtMDAyMV80LmpwZw.jpg"
+        alt="Roses"
+        class="float-right"
+      />
+
+      <div class="content">
+        <h2>CSS Float Example</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+          quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+          mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+          Vestibulum lacinia arcu eget nulla.
+        </p>
+        <p>
+          Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+          Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+          libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+          blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio
+          et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
+          faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+          tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+        </p>
+      </div>
+
+      <!-- Clear the float to stop the content from wrapping around the images -->
+      <div class="clear-float"></div>
+    </div>
+  </body>
+</html>
