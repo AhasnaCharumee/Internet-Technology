@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #283048, #859398);
+        }
+        .calculator {
+            width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .display {
+            width: 100%;
+            height: 50px;
+            font-size: 1.5em;
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        button {
+            padding: 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+        button:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .operator {
+            background: rgba(255, 165, 0, 0.8);
+        }
+        .operator:hover {
+            background: rgba(255, 165, 0, 1);
+        }
+        .equal {
+            background: rgba(0, 191, 255, 0.8);
+        }
+        .equal:hover {
+            background: rgba(0, 191, 255, 1);
+        }
+        .clear {
+            background: rgba(255, 69, 0, 0.8);
+            height: 65px;
+            padding: 25px;
+            margin-bottom: 10px;
+            border: none;
+
+        }
+        .clear:hover {
+            background: rgba(255, 69, 0, 1);
+        }
+        .display-container {
+    display: flex;
+    gap: 5px; /* Button saha input ekata thiyana idiripath weema */
+    align-items: center; /* Align wenna */
+}
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <input type="text" class="display" id="display" disabled>
+        </div>
+        
+        <div class="buttons">
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button class="operator" onclick="appendValue('+')">+</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button class="operator" onclick="appendValue('-')">-</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button class="operator" onclick="appendValue('/')">/</button>
+
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+            <button class="operator" onclick="appendValue('*')">*</button>
+        </div>
+    </div>
+
+    <script>
+        function appendValue(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+
+        function calculate() {
+            try {
+                document.getElementById("display").value = eval(document.getElementById("display").value);
+            } catch (error) {
+                alert("Invalid Expression");
+            }
+        }
+    </script>
+</body>
+</html>

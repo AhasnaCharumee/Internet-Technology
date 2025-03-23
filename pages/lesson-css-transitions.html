@@ -37,7 +37,17 @@
         transform: translateX(150px);
         scale: 1.5;
       }
-    
+    .image-container{
+      height: 200px;
+      width: 200px;
+    }
+    .image{
+      width: 100%;
+      transition: transform 3s  ease-in-out 1s ;
+    }
+    .image-container:hover img{
+      transform: scale(1.5) rotate(360deg);
+    }
     </style>
   </head>
   <body>
@@ -46,6 +56,11 @@
     <br />
     <hr>
     <div class="circle"></div>
+    <br />
+    <hr>
+    <div class="image-container">
+      <img class ="image" src="/assets/images/link.png" alt="linkdin">
+    </div>
 
   </body>
 </html>
